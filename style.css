@@ -58,12 +58,26 @@ body {
 
   .styling3 {
     color: white;
+    width: 450px;
     text-align: justify;
     margin-left: 55px;
     margin-top: 30px;
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     font-weight: normal;
+
+  }
+
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .styling3 {
+
+      /* Adjust font size for screens narrower than 768px */
+      margin-left: 0;
+      text-align: justify;
+      width: fit-content;
+      font-size: 12;
+    }
 
   }
 
@@ -85,8 +99,46 @@ body {
     border-top-right-radius: 3px;
   }
 
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .sign-up {
+
+      margin-left: 0;
+      margin-left: 40%;
+      cursor: pointer;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+
+  }
+
   .sign-up:hover {
     background-color: cornflowerblue;
+  }
+
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .sign-up:hover {
+
+      background-color: cornflowerblue;
+    }
+
+  }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .projects-container {
+
+    background-image: url('./assets/phone-bg3.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
   }
 
 }
